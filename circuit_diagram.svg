@@ -1,0 +1,164 @@
+<svg width="680" height="820" viewBox="0 0 680 820" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <style>
+    text { font-family: Arial, sans-serif; fill: #2D2D2D; }
+    .th  { font-size: 14px; font-weight: bold; }
+    .ts  { font-size: 12px; }
+    .c-blue rect   { fill: #E6F1FB; stroke: #185FA5; }
+    .c-blue text   { fill: #0C447C; }
+    .c-teal rect   { fill: #E1F5EE; stroke: #0F6E56; }
+    .c-teal text   { fill: #085041; }
+    .c-coral rect  { fill: #FAECE7; stroke: #993C1D; }
+    .c-coral text  { fill: #4A1B0C; }
+    .c-purple rect { fill: #EEEDFE; stroke: #534AB7; }
+    .c-purple text { fill: #26215C; }
+    .c-amber rect  { fill: #FAEEDA; stroke: #854F0B; }
+    .c-amber text  { fill: #412402; }
+    .c-gray rect   { fill: #F1EFE8; stroke: #5F5E5A; }
+    .c-gray text   { fill: #2C2C2A; }
+  </style>
+</defs>
+
+<!-- Background -->
+<rect width="680" height="820" fill="#FFFFFF"/>
+
+<!-- ARDUINO UNO -->
+<g class="c-blue">
+  <rect x="30" y="30" width="180" height="220" rx="10" stroke-width="1"/>
+  <text class="th" x="120" y="56" text-anchor="middle" dominant-baseline="central">Arduino Uno</text>
+</g>
+<text class="ts" x="170" y="90"  text-anchor="end" fill="#2D2D2D">Pin 5 (PWM)</text>
+<text class="ts" x="170" y="114" text-anchor="end" fill="#2D2D2D">Pin 6</text>
+<text class="ts" x="170" y="138" text-anchor="end" fill="#2D2D2D">Pin 7</text>
+<text class="ts" x="170" y="162" text-anchor="end" fill="#2D2D2D">Pin 8</text>
+<text class="ts" x="170" y="186" text-anchor="end" fill="#2D2D2D">Pin 9</text>
+<text class="ts" x="170" y="210" text-anchor="end" fill="#2D2D2D">Pin 10 (PWM)</text>
+<text class="ts" x="170" y="234" text-anchor="end" fill="#2D2D2D">GND</text>
+<circle cx="210" cy="90"  r="4" fill="#378ADD"/>
+<circle cx="210" cy="114" r="4" fill="#378ADD"/>
+<circle cx="210" cy="138" r="4" fill="#378ADD"/>
+<circle cx="210" cy="162" r="4" fill="#378ADD"/>
+<circle cx="210" cy="186" r="4" fill="#378ADD"/>
+<circle cx="210" cy="210" r="4" fill="#378ADD"/>
+<circle cx="210" cy="234" r="4" fill="#444441"/>
+
+<!-- WIRES Arduino to L298N -->
+<polyline points="210,90  270,90  270,105" fill="none" stroke="#EF9F27" stroke-width="1.5"/>
+<polyline points="210,114 280,114 280,130" fill="none" stroke="#BA7517" stroke-width="1.5"/>
+<polyline points="210,138 290,138 290,155" fill="none" stroke="#BA7517" stroke-width="1.5"/>
+<polyline points="210,162 300,162 300,180" fill="none" stroke="#3B6D11" stroke-width="1.5"/>
+<polyline points="210,186 310,186 310,205" fill="none" stroke="#3B6D11" stroke-width="1.5"/>
+<polyline points="210,210 320,210 320,230" fill="none" stroke="#EF9F27" stroke-width="1.5"/>
+<polyline points="210,234 330,234 330,255" fill="none" stroke="#444441" stroke-width="1.5"/>
+
+<!-- L298N -->
+<g class="c-teal">
+  <rect x="240" y="260" width="200" height="240" rx="10" stroke-width="1"/>
+  <text class="th" x="340" y="286" text-anchor="middle" dominant-baseline="central">L298N</text>
+  <text class="ts" x="340" y="304" text-anchor="middle" dominant-baseline="central">Motor Driver</text>
+</g>
+<text class="ts" x="256" y="330" fill="#085041">ENA</text>
+<text class="ts" x="256" y="354" fill="#085041">IN1</text>
+<text class="ts" x="256" y="378" fill="#085041">IN2</text>
+<text class="ts" x="256" y="402" fill="#085041">IN3</text>
+<text class="ts" x="256" y="426" fill="#085041">IN4</text>
+<text class="ts" x="256" y="450" fill="#085041">ENB</text>
+<text class="ts" x="256" y="474" fill="#085041">GND</text>
+<text class="ts" x="424" y="354" text-anchor="end" fill="#085041">OUT1</text>
+<text class="ts" x="424" y="378" text-anchor="end" fill="#085041">OUT2</text>
+<text class="ts" x="424" y="426" text-anchor="end" fill="#085041">OUT3</text>
+<text class="ts" x="424" y="450" text-anchor="end" fill="#085041">OUT4</text>
+<text class="ts" x="340" y="492" text-anchor="middle" fill="#085041">12V / GND</text>
+<circle cx="244" cy="330" r="4" fill="#1D9E75"/>
+<circle cx="244" cy="354" r="4" fill="#1D9E75"/>
+<circle cx="244" cy="378" r="4" fill="#1D9E75"/>
+<circle cx="244" cy="402" r="4" fill="#1D9E75"/>
+<circle cx="244" cy="426" r="4" fill="#1D9E75"/>
+<circle cx="244" cy="450" r="4" fill="#1D9E75"/>
+<circle cx="244" cy="474" r="4" fill="#444441"/>
+<circle cx="436" cy="354" r="4" fill="#1D9E75"/>
+<circle cx="436" cy="378" r="4" fill="#1D9E75"/>
+<circle cx="436" cy="426" r="4" fill="#1D9E75"/>
+<circle cx="436" cy="450" r="4" fill="#1D9E75"/>
+<circle cx="340" cy="498" r="4" fill="#E24B4A"/>
+
+<!-- Wires arriving at L298N left pins -->
+<polyline points="270,105 244,105 244,330" fill="none" stroke="#EF9F27" stroke-width="1.5"/>
+<polyline points="280,130 244,130 244,354" fill="none" stroke="#BA7517" stroke-width="1.5"/>
+<polyline points="290,155 244,155 244,378" fill="none" stroke="#BA7517" stroke-width="1.5"/>
+<polyline points="300,180 244,180 244,402" fill="none" stroke="#3B6D11" stroke-width="1.5"/>
+<polyline points="310,205 244,205 244,426" fill="none" stroke="#3B6D11" stroke-width="1.5"/>
+<polyline points="320,230 244,230 244,450" fill="none" stroke="#EF9F27" stroke-width="1.5"/>
+<polyline points="330,255 244,255 244,474" fill="none" stroke="#444441" stroke-width="1.5"/>
+
+<!-- LEFT MOTOR -->
+<g class="c-coral">
+  <rect x="490" y="300" width="160" height="70" rx="10" stroke-width="1"/>
+  <text class="th" x="570" y="328" text-anchor="middle" dominant-baseline="central">Left Motor</text>
+  <text class="ts" x="570" y="348" text-anchor="middle" dominant-baseline="central">Blue 6V Gear TT</text>
+</g>
+<polyline points="436,354 570,354 570,370" fill="none" stroke="#D85A30" stroke-width="2"/>
+<polyline points="436,378 480,378 480,335 490,335" fill="none" stroke="#D85A30" stroke-width="2"/>
+
+<!-- RIGHT MOTOR -->
+<g class="c-coral">
+  <rect x="490" y="420" width="160" height="70" rx="10" stroke-width="1"/>
+  <text class="th" x="570" y="448" text-anchor="middle" dominant-baseline="central">Right Motor</text>
+  <text class="ts" x="570" y="468" text-anchor="middle" dominant-baseline="central">Blue 6V Gear TT</text>
+</g>
+<polyline points="436,426 570,426 570,420" fill="none" stroke="#D85A30" stroke-width="2"/>
+<polyline points="436,450 480,450 480,455 490,455" fill="none" stroke="#D85A30" stroke-width="2"/>
+
+<!-- BATTERY -->
+<g class="c-amber">
+  <rect x="260" y="550" width="160" height="60" rx="10" stroke-width="1"/>
+  <text class="th" x="340" y="573" text-anchor="middle" dominant-baseline="central">Battery Pack</text>
+  <text class="ts" x="340" y="591" text-anchor="middle" dominant-baseline="central">Motor power</text>
+</g>
+<polyline points="340,550 340,502" fill="none" stroke="#E24B4A" stroke-width="2"/>
+
+<!-- RASPBERRY PI -->
+<g class="c-purple">
+  <rect x="30" y="420" width="180" height="120" rx="10" stroke-width="1"/>
+  <text class="th" x="120" y="450" text-anchor="middle" dominant-baseline="central">Raspberry Pi</text>
+  <text class="ts" x="120" y="470" text-anchor="middle" dominant-baseline="central">Python + OpenCV</text>
+  <text class="ts" x="120" y="488" text-anchor="middle" dominant-baseline="central">MobileNet SSD</text>
+  <text class="ts" x="120" y="506" text-anchor="middle" dominant-baseline="central">CSRT Tracker</text>
+</g>
+
+<!-- USB Serial line -->
+<polyline points="120,420 120,250" fill="none" stroke="#7F77DD" stroke-width="2" stroke-dasharray="6 3"/>
+<text class="ts" x="84" y="340" text-anchor="middle" fill="#534AB7">USB</text>
+<text class="ts" x="84" y="356" text-anchor="middle" fill="#534AB7">Serial</text>
+<text class="ts" x="84" y="372" text-anchor="middle" fill="#534AB7">9600 baud</text>
+
+<!-- WEBCAM -->
+<g class="c-gray">
+  <rect x="30" y="590" width="180" height="60" rx="10" stroke-width="1"/>
+  <text class="th" x="120" y="613" text-anchor="middle" dominant-baseline="central">USB Webcam</text>
+  <text class="ts" x="120" y="631" text-anchor="middle" dominant-baseline="central">640x480</text>
+</g>
+<polyline points="120,590 120,540" fill="none" stroke="#888780" stroke-width="2" stroke-dasharray="6 3"/>
+<text class="ts" x="84" y="567" text-anchor="middle" fill="#5F5E5A">USB</text>
+
+<!-- LEGEND BOX -->
+<rect x="30" y="690" width="620" height="110" rx="8" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text class="th" x="50" y="714" dominant-baseline="central" fill="#2D2D2D">Legend</text>
+<line x1="50"  y1="738" x2="90"  y2="738" stroke="#EF9F27" stroke-width="2"/>
+<text class="ts" x="96" y="742" fill="#2D2D2D">ENA / ENB (speed control)</text>
+<line x1="230" y1="738" x2="270" y2="738" stroke="#BA7517" stroke-width="2"/>
+<text class="ts" x="276" y="742" fill="#2D2D2D">IN1-IN4 (direction)</text>
+<line x1="390" y1="738" x2="430" y2="738" stroke="#3B6D11" stroke-width="2"/>
+<text class="ts" x="436" y="742" fill="#2D2D2D">IN3 / IN4 direction</text>
+<line x1="50"  y1="768" x2="90"  y2="768" stroke="#D85A30" stroke-width="2"/>
+<text class="ts" x="96" y="772" fill="#2D2D2D">Motor power (OUT1-4)</text>
+<line x1="230" y1="768" x2="270" y2="768" stroke="#E24B4A" stroke-width="2"/>
+<text class="ts" x="276" y="772" fill="#2D2D2D">Battery 12V</text>
+<line x1="390" y1="768" x2="430" y2="768" stroke="#7F77DD" stroke-width="2" stroke-dasharray="6 3"/>
+<text class="ts" x="436" y="772" fill="#2D2D2D">USB Serial (dashed)</text>
+<line x1="50"  y1="798" x2="90"  y2="798" stroke="#444441" stroke-width="2"/>
+<text class="ts" x="96" y="802" fill="#2D2D2D">GND (common ground)</text>
+</svg>
