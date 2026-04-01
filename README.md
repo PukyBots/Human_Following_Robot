@@ -37,7 +37,7 @@ An autonomous two-wheeled robot that detects, identifies, and follows a single d
 
 ## Circuit Diagram
 
-![Circuit Diagram](circuit_diagram.svg)
+![Circuit Diagram](OriginalCircuitDiagram.png)
 
 ## Pin Connections
 
